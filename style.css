@@ -242,7 +242,7 @@ h2{
 
 /*=============projects section======*/
 #projects{
-    height: 100vh;
+    height:100vh;
     margin-top:30px;
 }
 
@@ -343,7 +343,7 @@ label{
 input,textarea{
     background-color: transparent;
     border: 1px solid aliceblue;
-    color: whitesmoke;;
+    color: whitesmoke;
     padding:7px 10px;
     border-radius: 5px;
     outline: none;
@@ -374,7 +374,89 @@ footer p{
 }
 
 
+/* media queries*/
 
+@media screen and (width<=700px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding:5%;
+    }
+    
+    nav{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color:rgb(12,23,36);
+        padding:15px;
+        border-bottom:2px solid black
+    }
+    
+    .hero{
+        display: flex;
+        grid-template-columns: 1fr;
+        margin: 10px auto;
+        padding:20px;
+        flex-direction: column-reverse;
+    }
+    
+    .hero img{
+        width:300px;
+    }
+    
+    .about{
+        flex-direction: column-reverse;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 20px auto;
+    }
+    
+    .tech{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:10px;
+        margin-bottom:60px;
+    }
+    
+    #projects{
+        margin-top:300px;
+        
+        
+    }
+    
+    .projects{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    
+    #contact{
+        margin-top:150px;
+        margin-bottom:150px;
+        
+    }
+    .contact{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .contact .left{
+        margin-right:60px;
+        
+    }
+    
+    .left p{
+        font-size:14px;
+        border:none;
+    }
+    
+    footer{
+        margin-top:80px; 
+        border-top:1px solid white;
+        padding: inherit
+    }
+}
 
 
 
